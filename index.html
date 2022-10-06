@@ -26,11 +26,11 @@
 
 <title>Jingyuan Liu</title>
 <link rel="icon" href="images/icon.jpeg" type="image/x-icon">
-<header>
+<header id="Home">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light mask-custom shadow-0">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light mask-custom shadow-0" >
     <div class="container" style="margin-top:30px">
-      <a class="navbar-brand" href="#!"><span style="color: #5e9693; font-size: 40px">Jingyuan Liu ‎⸝⸝꙳</span></a>
+      <a class="navbar-brand" href="#Home"><span style="color: #5e9693; font-size: 40px">Jingyuan Liu ‎⸝⸝꙳</span></a>
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
         data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -41,6 +41,12 @@
         <ul class="navbar-nav navbar-right">
           <li class="nav-item" style="font-size:22px">
             <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li class="nav-item" style="font-size:22px">
+            <a class="nav-link" href="#Publications">Publications</a>
+          </li>
+          <li class="nav-item" style="font-size:22px">
+            <a class="nav-link" href="#Experiences">Experiences</a>
           </li>
           <li class="nav-item" style="font-size:22px">
             <a class="nav-link" href="JingyuanLiu_cv.pdf">Resume</a>
@@ -68,7 +74,7 @@
 
             <div class="col-md-7" style="font-size:18px; font-weight: 200; margin:0 auto;">
             <br>
-             Hi~ I am Jingyuan Liu, a Machine Learning Engineer at Adobe Lightroom working with <a href= https://research.adobe.com/person/jimei-yang/>Jimei Yang</a> and <a href= https://www.linkedin.com/in/simon-chen-a372674/>Simon Chen</a>. I received a M.S. in Data Science at Harvard University and a B.S. in Computer Science at Fudan University. Previously, I was a research assistant at Harvard EconCS lab advised by Prof. <a href= https://parkes.seas.harvard.edu/>David C.Parkes</a>, and Upenn GRASP lab advised by Prof. <a href= https://www.cis.upenn.edu/~jshi/>Jianbo Shi</a>.
+             Hi~ I am Jingyuan Liu, a Machine Learning Engineer at Adobe Lightroom working with <a href= https://research.adobe.com/person/jimei-yang/>Jimei Yang</a> and <a href= https://www.linkedin.com/in/simon-chen-a372674/>Simon Chen</a>. I received a M.S. in Data Science at Harvard University and a B.S. in Computer Science at Fudan University. Previously, I was a research assistant at Upenn GRASP lab advised by Prof. <a href= https://www.cis.upenn.edu/~jshi/>Jianbo Shi</a> and Harvard EconCS lab advised by Prof. <a href= https://parkes.seas.harvard.edu/>David C.Parkes</a>.
 
             <br><br>
             My work focused on semantic segmentation and auto white balance. I am particularly interested in the intersection between language and vision.  Recently, I am working on 3D depth estimation and AI photo critique.
@@ -85,20 +91,86 @@
   <!-- Publication -->
   <div class="container" style="font-family:metropolis; font-size:18px">
     <hr>
-    <h3 id="Publication" style="padding-top: 20px; color: #5e9693"><b>Publications</b></h3>
-    <!-- <div class="row">
-      <div class="col-md-2">
-        <a href="https://www.youtube.com/watch?v=ost49rbnI_8&t=7207s" target="_blank"><img class="img-fluid img-rounded" src="talks/20210620_CVPR21_GraphTutorial/logo.jpg" style="border:1px solid black" alt=""></a>
+    <h3 id="Publications" style="padding-top: 20px; color: #5e9693"><b>Publications</b></h3>
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid img-rounded" src="images/segmentation.png"alt=""></a>
       </div>
 
-      <div class="col-md-10">
-        Graph-Structured Networks for Physical Inference and Model-Based Control
+      <div class="col-md-9">
+       <b> Mobile-friendly transformer-based portrait segmentation</b>
         <br>
-        Invited talk at <b><font color="black">CVPR 2021 Tutorial <a href="https://xiaolonw.github.io/graphnnv3/" target="_blank">Learning Representations via Graph-structured Networks</a></font></b>
+        <b>Jingyuan Liu</b>, Jimei Yang, Qing Liu, Simon Chen, Yuhong Wu
         <br>
-        <a href="https://www.youtube.com/watch?v=ost49rbnI_8&t=7207s" target="_blank">[YouTube]</a> (June 2021)
+        <b>US Patent</b>, 2022
+        <p  style="font-size:15px">
+This work aims to develop a robustness mobile-friendly model with small model size, high inference speed and reasonable memory usage for the portrait segmentation. We introduced more high-resolution features in the encoder part to supply more information and utilize two segmentation head served as refinement stage to improve accuracy across all categories. To leverage datasets with different annotation, we adopt an unified training strategy with adaptive loss design for different data. We lowered memory usage by reducing the embedding dimension and substitute concatenate operator with series sum inside segmentation head without sacrificing accuracy.
+        </p>
+
       </div>
-    </div> -->
+    </div>
+  <br>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid img-rounded" src="images/awb.png"alt=""></a>
+      </div>
+
+      <div class="col-md-9">
+       <b>Semantic-Aware auto white balance</b>
+        <br>
+        <b>Jingyuan Liu</b>, Simon Chen, Brian Price, Xin Lu, Calista Chandler, He Zhang
+        <br>
+        <b>US Patent, P11299-US</b>, 2022
+        <p  style="font-size:15px">
+We propose a novel and unified WB algorithm that could handle both raw device RGB (scene referred raw image) and standard RGB images (output referred non-raw image). Our algorithm is semantic aware that we put emphasis on skin tone and are easily to extend to other objects colors. Our method is easy to personalize and more convenient to integrate into products with good performance compared to large deep learning models.
+        </p>
+      </div>
+    </div>
+<br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid img-rounded" src="images/icmr19.png"alt=""></a>
+      </div>
+
+      <div class="col-md-9">
+       <b> Weakly Supervised Image Retrieval via Coarse-scale Feature Fusion and Multi-level Attention Blocks</b>
+        <br>
+        Xinyao Nie, Hong Lu, Zijian Wang, <b>Jingyuan Liu</b>, Zehua Guo
+        <br>
+        ACM International Conference on Multimedia Retrieval <b>(ICMR)</b>, 2019 &nbsp
+        <a href="https://dl.acm.org/doi/10.1145/3323873.3325017" target="_blank">[Paper]</a> &nbsp<a href="https://github.com/SHIsue/ABIR" target="_blank">[Code]</a>
+        <p  style="font-size:15px">
+          We propose a network for image retrieval without human annotations like bounding box, which utilizes coarse-scale feature fusion and generates the attentive local features via combining the information from different intermediate layers. Two attentions blocks help extracted detailed information.
+        </p>
+
+      </div>
+    </div>
+<br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid img-rounded" src="images/eccv18.png"alt=""></a>
+      </div>
+
+      <div class="col-md-9">
+       <b> Deep Fashion Analysis with Feature Map Upsampling and Landmark-driven Attention</b>
+        <br>
+        <b>Jingyuan Liu</b>, Hong Lu
+        <br>
+        Workshop of European Conference on Computer Vision <b>(ECCV)</b>, 2018 &nbsp
+        <a href="https://openaccess.thecvf.com/content_ECCVW_2018/papers/11131/Liu_Deep_Fashion_Analysis_with_Feature_Map_Upsampling_and_Landmark-driven_Attention_ECCVW_2018_paper.pdf" target="_blank">[Paper]</a> &nbsp<a href="https://github.com/fdjingyuan/Deep-Fashion-Analysis-ECCV2018" target="_blank">[Code]</a>
+        <p  style="font-size:15px">
+          We propose an end-to-end fashion analysis network that addresses
+category classification and attribute prediction simultaneously, via improving
+the resolution of heatmaps through upsampling for more accurate landmark
+localization. A novel attention mechanism is introduced: Landmark heatmaps are used as
+references to generate a unified attention, so that the network has enough
+information to enhance or reduce features.
+        </p>
+      </div>
+    </div>
   </div><br>
 
 <!-- Education -->
